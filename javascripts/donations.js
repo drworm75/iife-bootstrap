@@ -7,15 +7,16 @@ var Donations = (function() {
   		getDonationInfo: function() {
   			return donationInfo;
 	  	},
-	  	createDonorObject: function(donorName, donorAmount, donationType) {
+	  	createDonorObject: function(donorName, donorEmail, donorAmount, donationType) {
 	  		donorObject = {}
 			donorObject["Name"] = donorName;
+			donorObject["Email"] = donorEmail;
 			donorObject["Amount"] = donorAmount;
 			donorObject["Type"] = donationType;
 			donationInfo.push(donorObject);
-
-			console.log(donationInfo[1]);
+			console.log(donationInfo);
 		}
+
   	};
 
 })(); 
