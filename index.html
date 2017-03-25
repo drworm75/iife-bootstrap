@@ -7,48 +7,53 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<div class="container-fluid">
 	<div class="row">
-		<div class="col-md-1"></div>
-	  	<div class="col-md-3">
-	  		<div><h4>Your Name:</h4></div>
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-5 col-sm-6">
+			<div id="table-div"></div>
+		</div>
+		<div class="col-md-5 col-sm-6">
+			<div><h4>Your Name:</h4></div>
 		  	<div class="form-group">
-			  	<input type="text" id="name" class="form-control" placeholder="John Doe"></div>
-	  	</div>
-	  	<div class="col-md-3">
-  		  		<div><h4>Your Email:</h4></div>
+			  	<input type="text" id="name" class="form-control" placeholder="John Doe">
+		  	</div>
+		  	<div><h4>Your Email:</h4></div>
 			<div class="form-group">
 				<input type="email" class="form-control" id="email" placeholder="someone@someplace.com">
-			</div>
-	  	</div>
-  		<div class="col-md-2">
+			</div>				
   			<div><h4>Pledge Amount:</h4></div>
+ 
   			<div class="input-group">
 					<span class="input-group-addon">$</span>
 					<input type="text" id="amount" class="form-control" aria-label="Amount (to the nearest dollar)">
 					<span class="input-group-addon">.00</span>
 			</div>
-		</div>
-		<div class="col-md-3">
+
 			<div><h4>Pledge Type:</h4></div>
-			<label class="radio-inline">
-			  <input type="radio" name="donationType" id="inlineRadio1" value="lump-sum"> <span>One Time</span>
-			</label>
-			<label class="radio-inline">
-			  <input type="radio" name="donationType" id="inlineRadio2" value="per-lap"> <span>Per Lap</span>
-			</label>
+			<div>
+				<label class="radio-inline">
+				  <input type="radio" name="donationType" id="inlineRadio1" value="lump-sum"> <span>One Time</span>
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="donationType" id="inlineRadio2" value="per-lap"> <span>Per Lap</span>
+				</label>
+			</div><br>	
+			<div>
+				<div class="btn-group" id="donate" role="group" aria-label="...">
+	  				<button type="button" class="btn btn-success btn-lg">Donate</button>
+	  				<button type="button" class="btn btn-danger btn-lg">Cancel</button>
+				</div>
+			</div>	
+		</div>	
+		<div class="col-md-1">
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-1"></div>
-	  	<div class="col-md-3">
-	  		<div class="btn-group" id="donate" role="group" aria-label="...">
-  				<button type="button" class="btn btn-success btn-lg">Donate</button>
-  				<button type="button" class="btn btn-danger btn-lg">Cancel</button>
-			</div>
-  		</div>
-  		<div class="col-md-8"></div>
-	</div>
-	<div id="table-div"> </div>
+	</div>	
+</div>
+
+
+		
 
 
 

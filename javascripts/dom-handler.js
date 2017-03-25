@@ -10,7 +10,7 @@ function writeToDom() {
 	var tableBuilder = "";
 	
 	tableBuilder += `<div class="col-md-6 table-responsive">`
-  	tableBuilder +=	`<table class="table">`
+  	tableBuilder +=	`<table class="table table-striped">`
 	tableBuilder +=	`<tr>`
 	tableBuilder +=	`<th>Name</th>`
 	tableBuilder +=	`<th>Email</th>`
@@ -34,15 +34,17 @@ function writeToDom() {
 
 btn.addEventListener("click", function(event) {
 	if (event.target.innerText === "Donate") {
-		name = donorName.value;
-		email = donorEmail.value
-		amount = donorAmount.value;
+			donorObject = {}
+			donorObject["Name"] = donorName.value;
+			donorObject["Email"] = donorEmail.value;
+			donorObject["Amount"] = donorAmount.value;
 	for (var i = 0; i < donationType.length; i++) {
 		if (donationType[i].checked === true) {
-			type = donationType[i].value;
-			Donations.createDonorObject(name, email, amount, type)
+			donorObject["Type"]  = donationType[i].value;
+			Donations.addDonor(donorObject);
 		}
 	}
+
 	writeToDom();
 	clearFields();
 

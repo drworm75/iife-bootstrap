@@ -7,14 +7,9 @@ var Donations = (function() {
   		getDonationInfo: function() {
   			return donationInfo;
 	  	},
-	  	createDonorObject: function(donorName, donorEmail, donorAmount, donationType) {
-	  		donorObject = {}
-			donorObject["Name"] = donorName;
-			donorObject["Email"] = donorEmail;
-			donorObject["Amount"] = donorAmount;
-			donorObject["Type"] = donationType;
-			donationInfo.push(donorObject);
-			console.log(donationInfo);
+	  	addDonor: function(donorObject) {
+	  		donationInfo.push(donorObject);
+			console.log("donatonIndo", donationInfo);
 		}
 
   	};
