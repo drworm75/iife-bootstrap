@@ -6,15 +6,15 @@
 
 * Donors should be able to enter their name, email and dollar amount & whether their donation is lump sum or per lap.
 
-*Store the donor information as JS objects, in a private array in an IIFE.
+* Store the donor information as JS objects, in a private array in an IIFE.
 
-*Use Bootstrap to style the form and table elements. .
+* Use Bootstrap to style the form and table elements. .
 
-*At desktop size display the table on the left and form on the right with some space around the sides.
+* At desktop size display the table on the left and form on the right with some space around the sides.
 
-*The page should have the same display on a tablet in landscape mode, but with no space at the sides.
+* The page should have the same display on a tablet in landscape mode, but with no space at the sides.
  
-*On mobile/vertical tablet the table should display above the form the table entries should be alternately striped
+* On mobile/vertical tablet the table should display above the form the table entries should be alternately striped
 
 ### Final Result:
 > Enter donor information, click enter, and the info appears in a table on the right hand side while clearing all the fields.  Cancel button will clear any information already entered. 
