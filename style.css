@@ -1,7 +1,23 @@
+body {
+	background-image: url(images/jGlzr.png);
+}
+
 .radio-inline {
 	font-size: 2em;
 }
 
 .radio-inline {
    line-height: .8;
+}
+
+#header-image {
+	padding-left: 175px;
+}
+
+#header-text {
+	margin-top: 102.5px;
+}
+
+#table-div tr:nth-child(even){
+	background-color: #fff;
 }
